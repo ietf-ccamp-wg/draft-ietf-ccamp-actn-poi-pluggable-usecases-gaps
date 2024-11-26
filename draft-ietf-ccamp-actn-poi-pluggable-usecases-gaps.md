@@ -1,6 +1,6 @@
 ---
-title: "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with coherent plugables under ACTN Framework"
-abbrev: "POI coherent pluggables"
+title: "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable pluggables under ACTN Framework"
+abbrev: "POI programmable pluggables"
 docname: draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps-latest
 
 stand_alone: true
@@ -135,7 +135,7 @@ informative:
 
 --- abstract
 
-This document provides general overarching guidelines for control and management of packet over optical converged networks with coherent pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on coherent pluggables. The document provides a gap analysis to solve the use cases.
+This document provides general overarching guidelines for control and management of packet over optical converged networks with programmable pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on programmable pluggables. The document provides a gap analysis to solve the use cases.
 
 --- middle
 
@@ -161,6 +161,8 @@ Optical component design has continued to improve density to the point where a w
 Optical transmission/switching is analogue and requires complex and holistic analog control. Consequently, coordination of control of the coherent plugs (in a device with packet functions) with the control of the rest of the optical network is highly desirable as this best enables robust network functionality and simplifies network operations.
 
 The combination of these above trends along with the desire to select best in breed components has led to the need for a standard way to control Coherent Modules. Coherent Modules are more complex than non-coherent modules and led to extensions of the host-to-module management interface: Coherent CMIS {{OIF-CMIS}}. Standardization of CMIS is intended such that a plug from vendor X can be installed in vendor Y's device.
+
+Current draft is applicable to programmable pluggables in general. By programmable we mean to include both coherent and non coherent pluggables. Depending on the technology of the pluggable there might be several parameters to configure. A first level of configuration is the ability to select the operational mode (in case several modes are supported, and, at a second level, for a particular operational mode, the specific parameters can be specified (e.g. frequency, output power…. ) and read. Operational mode is described in IETF in  {{!?I-D.draft-ietf-ccamp-optical-impairment-topology-yang}} . ITU-T Rec G.698.2 refers to application codes, while CMIS refers to AppSel code (Application Selector). In Openconfig, it is referred as Operational mode. 
 
 The applicability of Abstraction and Control of TE Networks (ACTN) architecture {{!RFC8453}} to Packet Optical Integration (POI) in the context of IP/MPLS and optical internetworking has been analyzed in {{?I-D.draft-ietf-teas-actn-poi-applicability}}. This document further extends to applicability of ACTN with the integration of coherent pluggables in IP/MPLS devices. An architecture analysis has been carried out by the MANTRA sub-group in the OOPT / TIP group (Open Optical & Packet Transport / Telecom Infra Project) {{MANTRA-whitepaper-IPoWDM-convergent-SDN-architecture}}.
 
