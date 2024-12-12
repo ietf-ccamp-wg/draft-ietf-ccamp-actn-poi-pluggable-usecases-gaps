@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-12-10T00:49:51.777341+00:00",
+  "timestamp": "2024-12-12T00:48:09.128307+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -509,6 +509,22 @@
       "body": "(aligned with OIF whitepaper) + other information (such as expected power consumption). \r\n",
       "createdAt": "2024-10-15T15:32:02Z",
       "updatedAt": "2024-10-15T15:32:03Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 28,
+      "id": "I_kwDOLDCSO86iwX5x",
+      "title": "Configuration use case workflow: clarify sequence",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/issues/28",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "During the call on Dec 10th there was a discussion on the steps in OLS media cannel activation, if it is done BEFORE the pluggable configuration, or after. Calculation is done always before (to know the lambda). \r\n\r\n",
+      "createdAt": "2024-12-10T16:24:05Z",
+      "updatedAt": "2024-12-10T16:24:05Z",
       "closedAt": null,
       "comments": []
     }
