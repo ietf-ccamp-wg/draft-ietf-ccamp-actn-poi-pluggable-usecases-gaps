@@ -474,7 +474,7 @@ Documenting the patch cord that connects the port of the coherent DWDM pluggable
 [TODO: is there IETF work we can point to? ROADMs usually cannot send signals by themselves that can be retrieved by an attached transponder]
 
 ##	End-to-end L3VPN/L2VPN service multi-layer fulfilment with SLA constraints (TE constraints) (valid for both)
-This use case is described in [draft-ietf-teas-actn-poi-applicability] for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation shall be achieved. The automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
+This use case is described in {{?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation shall be achieved. The automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
 
 ## Pluggable to pluggable service Provisioning
 The following specific coherent DWDM pluggable provisioning sub-cases are identified:
