@@ -2,7 +2,7 @@
 title: "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable pluggables under ACTN Framework"
 abbrev: "POI programmable pluggables"
 docname: draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps-latest
-****
+
 stand_alone: true
 ipr: trust200902
 area: "Routing"
@@ -473,7 +473,7 @@ TBC
 Documenting the patch cord that connects the port of the coherent DWDM pluggable in the routers to the optical node (e.g. to the right Add/Drop port of the ROADM) is performed. This manual operation is prone to human mistakes. It would be highly beneficial for operators to have a mean to check/discover that the right pluggable has been connected to the desired ROADM port. This use case requires the ability to inject optical power and expose power levels at coherent DWDM pluggable side and at ROADM port side and vice versa to perform the right correlation and validation.
 [TODO: is there IETF work we can point to? ROADMs usually cannot send signals by themselves that can be retrieved by an attached transponder]
 
-##	End-to-end L3VPN/L2VPN service multi-layer fulfilment with SLA constraints (TE constraints) (valid for both)
+## End-to-end L3VPN/L2VPN service multi-layer fulfilment with SLA constraints (TE constraints) (valid for both)
 This use case is described in {{!?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation shall be achieved. The automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
 
 ## Pluggable to pluggable service Provisioning
@@ -482,7 +482,7 @@ The following specific coherent DWDM pluggable provisioning sub-cases are identi
 Knowing the coherent pluggable characteristics (performance and optical impairments for a specific operational-mode-ID), the optical planning and validation process is performed and the following parameters are communicated by optical team to IP team: nominal-central-frequency, tx-output-power, operational-mode-ID and applicable threshold settings so that the coherent pluggables at both ends in the routers can be correctly configured in a manual way. In addition to the coherent pluggable configuration, the optical team needs to properly configure the Media Channel in the line system DWDM network.
 
 
-###	Semi-manual Day 1 configuration (‘valid for coherent pluggable’)
+### Semi-manual Day 1 configuration (‘valid for coherent pluggable’)
 Same optical planning and validation is performed first by optical team and then parameters are provided to MDSC operations engineer so that they can be set-up in the corresponding router’s pluggables.
 
 ### Semi-Automated Day 1 configuration with Path Computation API request (‘valid for coherent pluggable’)
@@ -497,16 +497,16 @@ This operation is supported by the PNC which will be in charge also to turn-on t
 ### Fully automated Day 1 configuration
 (For future discussions)
 
-## 4.	End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
+## 4. End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
 This use case is described in {{!?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation could be achieved. However considering PMO (Present Mode of Operation) in most operators, before an optical path is setup either between two native transponders or between two coherent pluggables in  routers, a detailed optical planning and validation is typically required. So, the automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
 [TODO: explain how the need for additional optical connectivity is triggered. VPN often does not carry a bandwidth information, so it is hard to figure out when it is "full". Even then the remediation action may be a reroute.]
 
-## 	End-to-end L3VPN/L2VPN service multi-layer with SLA constraints (TE constraints) with optical restoration support (valid for both but here focusing on the coherent pluggable)
+## End-to-end L3VPN/L2VPN service multi-layer with SLA constraints (TE constraints) with optical restoration support (valid for both but here focusing on the coherent pluggable)
 This use case has not the same priority as the previous ones as protection in multi-layer Core/Backhaul networks is usually implemented at IP layer (e.g. FRR with RSVP-TE, TI-LFA with SR and SR policies in SR-TE) to avoid proven protection races.
-a.	ZR+ links over DWDM network can be considered out of the L0 control plane so that no restoration is applied to those links
-b.	ZR+ links over DWDM network can be considered part of the L0 control plane but no restoration is enabled for those links
-c.	ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links but nominal-central-frequeny is maintained unchanged after L0 restoration. Only output-power could be tuned for the new restored path determined by the L0 control plane
-d.	ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links and nominal-central-frequency and output power need to be tuned for the new restored path determined by the L0 control plane.
+a. ZR+ links over DWDM network can be considered out of the L0 control plane so that no restoration is applied to those links
+b. ZR+ links over DWDM network can be considered part of the L0 control plane but no restoration is enabled for those links
+c. ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links but nominal-central-frequeny is maintained unchanged after L0 restoration. Only output-power could be tuned for the new restored path determined by the L0 control plane
+d. ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links and nominal-central-frequency and output power need to be tuned for the new restored path determined by the L0 control plane.
 [TODO: Unclear description]
 
 # Security Considerations
