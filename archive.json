@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-01-30T00:42:03.991085+00:00",
+  "timestamp": "2025-02-20T00:44:14.815572+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -97,7 +97,7 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-01-23T16:50:24Z",
-      "updatedAt": "2024-10-22T16:01:28Z",
+      "updatedAt": "2025-02-18T16:22:26Z",
       "closedAt": null,
       "comments": [
         {
@@ -106,6 +106,13 @@
           "body": "The priorities of the operators are scenarios without restoration. Such scenario can be opened in a continutation draft. ",
           "createdAt": "2024-10-22T16:01:26Z",
           "updatedAt": "2024-10-22T16:01:26Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "We need to add a text describing bfiefly and mention the lower priority (agreed in 18/02/25 call)",
+          "createdAt": "2025-02-18T16:22:25Z",
+          "updatedAt": "2025-02-18T16:22:25Z"
         }
       ]
     },
@@ -559,16 +566,31 @@
       "id": "I_kwDOLDCSO86n3fwg",
       "title": "reference missing: Operational Mode",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/issues/31",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ggrammel",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "operational mode [TODO: reference for definition] ",
       "createdAt": "2025-01-28T17:40:13Z",
-      "updatedAt": "2025-01-28T17:40:13Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-02-18T16:15:45Z",
+      "closedAt": "2025-02-18T16:15:44Z",
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "draft-ietf-ccamp-optical-impairment-topology-yang-17",
+          "createdAt": "2025-02-18T16:13:24Z",
+          "updatedAt": "2025-02-18T16:13:24Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Done in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/commit/491b1534b83286e043e9a55830d574dc06ca96b1 ",
+          "createdAt": "2025-02-18T16:15:44Z",
+          "updatedAt": "2025-02-18T16:15:44Z"
+        }
+      ]
     },
     {
       "number": 32,
@@ -582,9 +604,17 @@
       "labels": [],
       "body": "line 189: TODO: where is \"disaggregation\" defined?",
       "createdAt": "2025-01-28T17:42:07Z",
-      "updatedAt": "2025-01-28T17:42:07Z",
+      "updatedAt": "2025-02-18T16:25:26Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Sergio suggested to start with the definition in MANTRA document:\n\nThe optical disaggregation, enabled by the SDN open and standard management\ninterfaces for the optical transport networks, allows DWDM channels to be\ntransmitted by third-party Open Optical Terminals (O-OTs) over a different\nsupplier Open Optical Line Systems (O-OLS).\n\nHowever, this points alo to O-OTs and OOLS wich also need definition. ",
+          "createdAt": "2025-02-18T16:25:24Z",
+          "updatedAt": "2025-02-18T16:25:24Z"
+        }
+      ]
     },
     {
       "number": 33,
@@ -614,9 +644,17 @@
       "labels": [],
       "body": "line 365: (TODO: CHECK AS RESTORATION COULD BE A CHOICE)",
       "createdAt": "2025-01-28T17:44:20Z",
-      "updatedAt": "2025-01-28T17:44:20Z",
+      "updatedAt": "2025-02-18T16:23:13Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Duplicated with issue #2 ",
+          "createdAt": "2025-02-18T16:23:12Z",
+          "updatedAt": "2025-02-18T16:23:12Z"
+        }
+      ]
     },
     {
       "number": 35,
@@ -1558,26 +1596,42 @@
       "id": "PR_kwDOLDCSO86Iqk6t",
       "title": "Update draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.md",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/29",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ggrammel",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Addressing: Configuration use case workflow: clarify sequence #28\r\n\r\n1. Editing text to avoid mandating sequences and to neutralize for different architectures.  \r\n2. using [TODO: ...] to identify points of discussion or unclear statements that are in need of more work.",
       "createdAt": "2025-01-22T18:30:22Z",
-      "updatedAt": "2025-01-22T18:33:29Z",
+      "updatedAt": "2025-02-18T15:58:56Z",
       "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
       "baseRefName": "main",
       "baseRefOid": "6b0af9ca1d7902404fae6e52550560f7227edc4d",
       "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
       "headRefName": "ggrammel-patch-1",
       "headRefOid": "a8d59b344c12f0288ec5b3241ae74ee1bd1dc4ae",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-02-18T15:58:50Z",
+      "mergedAt": "2025-02-18T15:58:50Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "8e2dbe1dfcad37113530dcbd30e5d1911f60f117"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86caNXh",
+          "commit": {
+            "abbreviatedOid": "a8d59b3"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "Merging contributions, pending todos from the issue list",
+          "createdAt": "2025-02-18T15:58:42Z",
+          "updatedAt": "2025-02-18T15:58:42Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
