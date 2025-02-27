@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-02-25T00:45:08.758581+00:00",
+  "timestamp": "2025-02-27T00:44:45.638726+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -604,7 +604,7 @@
       "labels": [],
       "body": "line 189: TODO: where is \"disaggregation\" defined?",
       "createdAt": "2025-01-28T17:42:07Z",
-      "updatedAt": "2025-02-18T16:25:26Z",
+      "updatedAt": "2025-02-25T15:59:59Z",
       "closedAt": null,
       "comments": [
         {
@@ -613,6 +613,13 @@
           "body": "Sergio suggested to start with the definition in MANTRA document:\n\nThe optical disaggregation, enabled by the SDN open and standard management\ninterfaces for the optical transport networks, allows DWDM channels to be\ntransmitted by third-party Open Optical Terminals (O-OTs) over a different\nsupplier Open Optical Line Systems (O-OLS).\n\nHowever, this points alo to O-OTs and OOLS wich also need definition. ",
           "createdAt": "2025-02-18T16:25:24Z",
           "updatedAt": "2025-02-18T16:25:24Z"
+        },
+        {
+          "author": "ggrammel",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "How about borrowing from https://opennetworking.org/odtn/ by replacing ODTN with \"optical Disagreggation\"?\n\n> _Optical Disaggregation_ will enable a white-box optical \u2018peripherals\u2019 ecosystem that allows multiple components to be combined and built into complete solutions. Vendors can focus on building a specific component (e.g. transponder) without having to build a complete solution leading to accelerated innovation and lower costs. Operators will have the freedom to select best-in-class components and avoid vendor lock-in, thereby gaining flexibility as their network needs grow.",
+          "createdAt": "2025-02-25T15:59:56Z",
+          "updatedAt": "2025-02-25T15:59:56Z"
         }
       ]
     },
@@ -1632,6 +1639,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 48,
+      "id": "PR_kwDOLDCSO86Mf3Wb",
+      "title": "Update draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/48",
+      "state": "OPEN",
+      "author": "ggrammel",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "addressing issue #35",
+      "createdAt": "2025-02-25T16:11:32Z",
+      "updatedAt": "2025-02-25T16:11:32Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "c177ed139896e8f839277216ab816c384ae283b2",
+      "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "ggrammel-patch-1",
+      "headRefOid": "3e738023544ef9841eaa1165c1d4b956fbd592a8",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
