@@ -418,9 +418,7 @@ This scenario, shown in {{figure-topo5}} and extends network topologies {{figure
 
 This section provides a set of packet over optical general use cases which are applicable to any network topologies in Section 4 and both for multi-layer networks using or not coherent pluggables in the routers. These use cases are presented following current operators’ priorities order.
 
-The use cases a generally applicable for both the traditional packet over optical integration based on grey interfaces in the IP routers and use of transponders/muxponders in the optical domain and for the packet over optical integration considering coherent DWDM pluggables in the IP routers over a media channel/Network Media channel in the optical domain. For clarification purposes, the mention ‘valid for both’ has been added in the name of each use case else ‘valid for coherent pluggable’ when the use case is specific to the coherent pluggable approach.
-
-[TODO: ‘valid for coherent pluggable’ probably means when optical line system is present. consider renaming e.g. 'valid for OLS applications']
+The use cases a generally applicable for both the traditional packet over optical integration based on grey interfaces in the IP routers and use of transponders/muxponders in the optical domain and for the packet over optical integration considering coherent DWDM pluggables in the IP routers over a media channel/Network Media channel in the optical domain. For clarification purposes, the mention ‘valid for both’ has been added in the name of each use case else ‘valid for O-OLS’ when the use case is specific to the open optical line systems approach.
 
 ## End-to-end multi-layer visibility and management (valid for both)
 
