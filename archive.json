@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-04T00:46:00.709669+00:00",
+  "timestamp": "2025-03-06T00:45:42.528749+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -59,12 +59,13 @@
       "author": "oscargdd",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
+        "oscargdd",
         "ggalimba56"
       ],
       "labels": [],
       "body": "",
       "createdAt": "2024-01-23T16:37:26Z",
-      "updatedAt": "2024-10-22T15:47:07Z",
+      "updatedAt": "2025-03-04T16:24:59Z",
       "closedAt": null,
       "comments": [
         {
@@ -80,6 +81,13 @@
           "body": "@ggalimba56  and @ggrammel  please work togher to address the changes",
           "createdAt": "2024-10-22T15:47:06Z",
           "updatedAt": "2024-10-22T15:47:06Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Call 4/3/204: Suggestion to mention in the beginning of the scenarios section that the IP link is supported over an Ethernet connection, not shown in the pictures for simplification. ",
+          "createdAt": "2025-03-04T16:24:55Z",
+          "updatedAt": "2025-03-04T16:24:55Z"
         }
       ]
     },
@@ -92,7 +100,8 @@
       "author": "oscargdd",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
-        "oscargdd"
+        "oscargdd",
+        "ju7ien"
       ],
       "labels": [],
       "body": "",
@@ -176,24 +185,39 @@
       "labels": [],
       "body": "We have submitted last-minute in this version, so some contributors like Manolo and Jose Angel were not included. I'd like to track here the contributors to add.",
       "createdAt": "2024-03-05T07:58:24Z",
-      "updatedAt": "2024-03-05T07:58:24Z",
+      "updatedAt": "2025-03-04T16:32:27Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Call 4/3/2025 Asked for missing contributors, please create pull request or reply in this issue. Closing in one week. ",
+          "createdAt": "2025-03-04T16:28:20Z",
+          "updatedAt": "2025-03-04T16:28:20Z"
+        },
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "NONE",
+          "body": "> Call 4/3/2025 Asked for missing contributors, please create pull request or reply in this issue. Closing in one week.\n\n@oscargdd : Hi Oscar, could you add me in the list of contributors ? Thanks",
+          "createdAt": "2025-03-04T16:32:26Z",
+          "updatedAt": "2025-03-04T16:32:26Z"
+        }
+      ]
     },
     {
       "number": 9,
       "id": "I_kwDOLDCSO86EXzrr",
       "title": "Discussion on pluggable discovery",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/issues/9",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "oscargdd",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "- Can the pluggable have \"default values\"? (e.g. application code, frequency...)",
       "createdAt": "2024-04-02T15:32:35Z",
-      "updatedAt": "2024-04-23T12:33:55Z",
-      "closedAt": null,
+      "updatedAt": "2025-03-04T16:29:16Z",
+      "closedAt": "2025-03-04T16:29:15Z",
       "comments": [
         {
           "author": "oscargdd",
@@ -250,6 +274,13 @@
           "body": "Thanks for the proposal. Comments below:\r\n\r\n1) The \u00b7pre-configuration can come from factory, or operator-driven. E.g. you want to pre-tune your pluggables, etc... It might be useful in some scenarios.  \r\n\r\nText suggestion:\r\n\r\n\"Coherent pluggables can come with a default set of parameters, either by factory settings or pre-configured by the operator. Pre-configured parameters might include default channel number, default launched power, default application code id, laser-on, admin-state enabled etc..\"\r\n\r\n2) The fact that it varies is because there is no \"enforcement\" by any standard right? I also understood that CMIS defines (or maybe recommends...) some defaul parameters. \r\n\r\nText suggestoin:\r\n\r\n\"This factory default set of parameters varies from manufacturer to manufacturer, as the standard does not mandate a given set of values, even though some parameters have default values.\"\r\n\r\n3) I would add that the recommendation is that, independently wethere the pluggable comes with a valid pre-configuration or not, it should not inmideatly start transmitting.\r\n\r\nText suggestion:\r\n\r\n\"In order to avoid unintentionally harming other channels, it is recommended that after a pluggable is connected to the router, by default, the laser is off, and the operator (or the controller) should explictly enable the transceiver.\"\r\n\r\n4) \"overwritten through router CLI or through Packet PNC\". I think we need to hightlight the the router can have also been preconfigured, and it MUST take prececence over the pluggable. If you modify later, it is a normal case...  Also, I would be agnostic of who configured that (maybe saying management or control is fine) I would suggest:\r\n\r\n\"shall be overwritten throught the configuration stored in the router, which might have been provided by management or controller means. \"\r\n\r\n\r\nWhen you make the PR, I make the suggestions there directly, we can continue the discussion here\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
           "createdAt": "2024-04-23T12:33:54Z",
           "updatedAt": "2024-04-23T12:33:54Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Solved with Jeff pull requests. ",
+          "createdAt": "2025-03-04T16:29:15Z",
+          "updatedAt": "2025-03-04T16:29:15Z"
         }
       ]
     },
@@ -288,13 +319,39 @@
       "state": "OPEN",
       "author": "oscargdd",
       "authorAssociation": "COLLABORATOR",
-      "assignees": [],
+      "assignees": [
+        "oscargdd",
+        "ggalimba56",
+        "jbouqui153"
+      ],
       "labels": [],
       "body": "The requirement is to be able to know which type of pluggable  is availble, so it't characterization can be obtained by the controller. This does not preclude that the controller also discovers capabilities real time from the pluggable and verifies them vs the expectations from the pre-characterization. \r\n\r\nIt is required to standardize which parameters to use in this identification (from ivy and/ openconfig).\r\n ",
       "createdAt": "2024-04-30T15:59:54Z",
-      "updatedAt": "2024-04-30T15:59:54Z",
+      "updatedAt": "2025-03-04T16:47:31Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "As a target (not first priority), we would like to have all the parameters required for planning  coming from the host / pluggable. \n\nBare minimum (report the inventory): part number, version, supported operational modes\n\nAdditional (list all parameters from the manifest) ",
+          "createdAt": "2025-03-04T16:36:52Z",
+          "updatedAt": "2025-03-04T16:36:52Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@ggalimba56  Please review the draft and update (if required) ",
+          "createdAt": "2025-03-04T16:37:44Z",
+          "updatedAt": "2025-03-04T16:37:44Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Suggestion from 4/3/2025 call: Describe a specifc planning use case were the two options are documented (get the inventory information and get infomration from external database, and get the inventory + manifest, so the controller/planning tool is self-sufficient. \n\nBorrow from TIP whitepaer. ",
+          "createdAt": "2025-03-04T16:47:23Z",
+          "updatedAt": "2025-03-04T16:47:23Z"
+        }
+      ]
     },
     {
       "number": 13,
@@ -304,13 +361,23 @@
       "state": "OPEN",
       "author": "sergiobelotti",
       "authorAssociation": "NONE",
-      "assignees": [],
+      "assignees": [
+        "oscargdd"
+      ],
       "labels": [],
       "body": "For alignment with figure 1 and 2 , the dotted line between packet device 1 with pluggable and Photonics should be named \"WDM Optics\" (as in figure 2A) and the dotted line between packet device 3 and xPonder should be named \"Grey Optics\" (as in figure 1)\r\n",
       "createdAt": "2024-05-21T14:24:59Z",
-      "updatedAt": "2024-05-21T14:24:59Z",
+      "updatedAt": "2025-03-04T16:53:00Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Call 4/3/2025 Modify figure 2.B (scenario with just fiber in between, no photonic devices, e.g amplifiers ) and add WDM optics too.",
+          "createdAt": "2025-03-04T16:52:59Z",
+          "updatedAt": "2025-03-04T16:52:59Z"
+        }
+      ]
     },
     {
       "number": 14,
@@ -404,9 +471,17 @@
       "labels": [],
       "body": "What is required to be covered by the inventory?\r\n\r\nDo we need a \"capability\" database?\r\n\r\nProposal to differentiate betweeen inventory and capability database.",
       "createdAt": "2024-07-02T15:54:22Z",
-      "updatedAt": "2024-07-02T15:54:22Z",
+      "updatedAt": "2025-03-04T17:09:14Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "nigel-r-davis",
+          "authorAssociation": "NONE",
+          "body": "The distinction to me is that an inventory is of instances of things (e.g., hardware) where for live hardware, there would be one entry per specific serial number, whereas capability is related to the type of thing etc. The capability database provides a machine interpretable specification of the type. This may include, physical properties/characteristics and emergent functional opportunities that result. \n\nSo an inventory may have many instances of hardware where each is of the same specific type and each is identified individually (distinct serial numbers etc.). In this case, there will only be one entry in the capability database for that type.\n\nThere is always a debate on whether the inventory should include just physical things or should also include functional things etc. (the word \"inventory\" just means list of things and the definition does not imply the idea of structure). In ivy we focus strongly on physical things (can be measured with a ruler). \n\n",
+          "createdAt": "2025-03-04T16:56:43Z",
+          "updatedAt": "2025-03-04T17:09:14Z"
+        }
+      ]
     },
     {
       "number": 21,
@@ -604,7 +679,7 @@
       "labels": [],
       "body": "line 189: TODO: where is \"disaggregation\" defined?",
       "createdAt": "2025-01-28T17:42:07Z",
-      "updatedAt": "2025-02-25T15:59:59Z",
+      "updatedAt": "2025-03-04T16:16:38Z",
       "closedAt": null,
       "comments": [
         {
@@ -620,6 +695,13 @@
           "body": "How about borrowing from https://opennetworking.org/odtn/ by replacing ODTN with \"optical Disagreggation\"?\n\n> _Optical Disaggregation_ will enable a white-box optical \u2018peripherals\u2019 ecosystem that allows multiple components to be combined and built into complete solutions. Vendors can focus on building a specific component (e.g. transponder) without having to build a complete solution leading to accelerated innovation and lower costs. Operators will have the freedom to select best-in-class components and avoid vendor lock-in, thereby gaining flexibility as their network needs grow.",
           "createdAt": "2025-02-25T15:59:56Z",
           "updatedAt": "2025-02-25T15:59:56Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "TIP Open Optical Whitepaper describes the different disaggregation levels. Add reference to https://cdn.mediavalet.com/usva/telecominfraproject/VdNAxFBh8UKdTtvU_OOU2A/ooMkKLHdL0i-qq-fgsIxvQ/Original/TIP_OOPT_MUST_Optical_Whitepaper_Target_Architecture_-_Disaggregated_Open_Optical_Networks__v10_-_GREENPUBLIC_ACCESS.pdf ",
+          "createdAt": "2025-03-04T16:16:37Z",
+          "updatedAt": "2025-03-04T16:16:37Z"
         }
       ]
     },
@@ -668,16 +750,24 @@
       "id": "I_kwDOLDCSO86n3ibK",
       "title": "is the label  \u2018valid for coherent pluggable\u2019  accurate?",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/issues/35",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ggrammel",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "line 423: \u2018valid for coherent pluggable\u2019 probably means when optical line system is present. consider renaming e.g. 'valid for OLS applications']",
       "createdAt": "2025-01-28T17:45:38Z",
-      "updatedAt": "2025-01-28T17:45:38Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-03-04T15:24:26Z",
+      "closedAt": "2025-03-04T15:24:25Z",
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Solved by PR #48 ",
+          "createdAt": "2025-03-04T15:24:25Z",
+          "updatedAt": "2025-03-04T15:24:25Z"
+        }
+      ]
     },
     {
       "number": 36,
@@ -1645,24 +1735,26 @@
       "id": "PR_kwDOLDCSO86Mf3Wb",
       "title": "Update draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.md",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/48",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ggrammel",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "addressing issue #35",
       "createdAt": "2025-02-25T16:11:32Z",
-      "updatedAt": "2025-02-25T16:11:32Z",
+      "updatedAt": "2025-03-04T15:23:44Z",
       "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
       "baseRefName": "main",
       "baseRefOid": "c177ed139896e8f839277216ab816c384ae283b2",
       "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
       "headRefName": "ggrammel-patch-1",
       "headRefOid": "3e738023544ef9841eaa1165c1d4b956fbd592a8",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-03-04T15:23:44Z",
+      "mergedAt": "2025-03-04T15:23:44Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "05388b67182e06b767402c278620831875a388f7"
+      },
       "comments": [],
       "reviews": []
     }
