@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-04-01T00:55:12.783141+00:00",
+  "timestamp": "2025-04-13T02:14:13.524079+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -1755,6 +1755,32 @@
       "mergeCommit": {
         "oid": "05388b67182e06b767402c278620831875a388f7"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 50,
+      "id": "PR_kwDOLDCSO86ST9Ie",
+      "title": "Update draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/50",
+      "state": "OPEN",
+      "author": "GregMirsky",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "MOPA contribution",
+      "createdAt": "2025-04-11T20:15:23Z",
+      "updatedAt": "2025-04-11T20:15:23Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "05388b67182e06b767402c278620831875a388f7",
+      "headRepository": "GregMirsky/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "patch-1",
+      "headRefOid": "6a856dcadf8c6e28362d0a67be7d2a471b1d395a",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
