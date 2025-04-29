@@ -133,6 +133,11 @@ informative:
               date: 2022-08-31
               target: https://telecominfraproject.com/wp-content/uploads/TIP_OOPT_MANTRA_IP_over_DWDM_Whitepaper-Final-Version3.pdf
 
+   MOPA-Tech-Paper:
+              title: "MOPA Technical Paper v3.2"
+              date: 2025-04-01
+              target: https://mopa-alliance.org/wp-content/uploads/2025/03/MOPA_Technical_Paper-v3.2-Final.pdf
+
 --- abstract
 
 This document provides general overarching guidelines for control and management of packet over optical converged networks with programmable pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on programmable pluggables. The document provides a gap analysis to solve the use cases.
@@ -327,7 +332,7 @@ Note that there is no amplification and no protection in this scenario.
 
 This scenario extends {{figure-topo1}} by making more efficient use of the deployed fiber infrastructure.
 
-As shown in {{figure-topo2}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices.
+As shown in {{figure-topo2}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices. A variant of this use case is mobile fronthaul, analyzed in {{MOPA-Tech-Paper}}, where coherent pluggables in packet aggregation switches would use WDM but no amplification for distances up to 20 km or so.
 
 Note that there is no protection in this scenario.
 [TODO: optical switch for protection??]
