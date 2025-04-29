@@ -13,7 +13,7 @@
 <meta content="
        This document provides general overarching guidelines for control and management of packet over optical converged networks with programmable pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on programmable pluggables. The document provides a gap analysis to solve the use cases. 
     " name="description">
-<meta content="xml2rfc 3.28.0" name="generator">
+<meta content="xml2rfc 3.28.1" name="generator">
 <meta content="coherent" name="keyword">
 <meta content="photonic" name="keyword">
 <meta content="pluggable" name="keyword">
@@ -25,14 +25,14 @@
 <meta content="Packet" name="keyword">
 <meta content="draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.28.0
-    Python 3.12.9
+  xml2rfc 3.28.1
+    Python 3.12.10
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
-    Jinja2 3.1.5
+    Jinja2 3.1.6
     lxml 5.3.0
-    platformdirs 4.3.6
+    platformdirs 4.3.7
     pycountry 24.6.1
     PyYAML 6.0.2
     requests 2.32.3
@@ -1056,11 +1056,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">POI programmable pluggables</td>
-<td class="right">March 2025</td>
+<td class="right">April 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">de Dios, et al.</td>
-<td class="center">Expires 5 September 2025</td>
+<td class="center">Expires 31 October 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1073,12 +1073,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-03-04" class="published">4 March 2025</time>
+<time datetime="2025-04-29" class="published">29 April 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-09-05">5 September 2025</time></dd>
+<dd class="expires"><time datetime="2025-10-31">31 October 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1139,7 +1139,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 5 September 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 31 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1531,7 +1531,7 @@ Disaggregation enables network operators to choose best-of-breed components for 
 <a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-scenario-b-high-capacity-po" class="section-name selfRef">Scenario B - High capacity point to point over shared fiber</a>
         </h3>
 <p id="section-4.2-1">This scenario extends <a href="#_figure-topo1" class="auto internal xref">Figure 4</a> by making more efficient use of the deployed fiber infrastructure.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
-<p id="section-4.2-2">As shown in <a href="#_figure-topo2" class="auto internal xref">Figure 5</a>, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices.<a href="#section-4.2-2" class="pilcrow">¶</a></p>
+<p id="section-4.2-2">As shown in <a href="#_figure-topo2" class="auto internal xref">Figure 5</a>, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices. A variant of this use case is mobile fronthaul, analyzed in <span>[<a href="#MOPA-Tech-Paper" class="cite xref">MOPA-Tech-Paper</a>]</span>, where coherent pluggables in packet aggregation switches would use WDM but no amplification for distances up to 20 km or so.<a href="#section-4.2-2" class="pilcrow">¶</a></p>
 <p id="section-4.2-3">Note that there is no protection in this scenario.
 [TODO: optical switch for protection??]<a href="#section-4.2-3" class="pilcrow">¶</a></p>
 <span id="name-network-topology-with-share"></span><div id="_figure-topo2">
@@ -1880,9 +1880,13 @@ d. ZR+ links over DWDM network can be considered as part of the L0 control plane
         <dd>
 <span class="refTitle">"IPoWDM convergent SDN architecture - Motivation, technical definition &amp; challenges"</span>, <time datetime="2022-08-31" class="refDate">31 August 2022</time>, <span>&lt;<a href="https://telecominfraproject.com/wp-content/uploads/TIP_OOPT_MANTRA_IP_over_DWDM_Whitepaper-Final-Version3.pdf">https://telecominfraproject.com/wp-content/uploads/TIP_OOPT_MANTRA_IP_over_DWDM_Whitepaper-Final-Version3.pdf</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="MOPA-Tech-Paper">[MOPA-Tech-Paper]</dt>
+        <dd>
+<span class="refTitle">"MOPA Technical Paper v3.2"</span>, <time datetime="2025-04-01" class="refDate">1 April 2025</time>, <span>&lt;<a href="https://mopa-alliance.org/wp-content/uploads/2025/03/MOPA_Technical_Paper-v3.2-Final.pdf">https://mopa-alliance.org/wp-content/uploads/2025/03/MOPA_Technical_Paper-v3.2-Final.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="I-D.draft-ietf-ccamp-optical-impairment-topology-yang">[I-D.draft-ietf-ccamp-optical-impairment-topology-yang]</dt>
         <dd>
-<span class="refAuthor">Beller, D.</span>, <span class="refAuthor">Le Rouzic, E.</span>, <span class="refAuthor">Belotti, S.</span>, <span class="refAuthor">Galimberti, G.</span>, and <span class="refAuthor">I. Busi</span>, <span class="refTitle">"A YANG Data Model for Optical Impairment-aware Topology"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-ccamp-optical-impairment-topology-yang-17</span>, <time datetime="2024-10-21" class="refDate">21 October 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-17">https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-17</a>&gt;</span>. </dd>
+<span class="refAuthor">Beller, D.</span>, <span class="refAuthor">Le Rouzic, E.</span>, <span class="refAuthor">Belotti, S.</span>, <span class="refAuthor">Galimberti, G.</span>, and <span class="refAuthor">I. Busi</span>, <span class="refTitle">"A YANG Data Model for Optical Impairment-aware Topology"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-ccamp-optical-impairment-topology-yang-18</span>, <time datetime="2025-04-11" class="refDate">11 April 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-18">https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-18</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.draft-ietf-teas-actn-poi-applicability">[I-D.draft-ietf-teas-actn-poi-applicability]</dt>
       <dd>

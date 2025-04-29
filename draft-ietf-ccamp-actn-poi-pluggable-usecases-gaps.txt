@@ -5,14 +5,14 @@
 ccamp                                                      O. G. de Dios
 Internet-Draft                                                Telefonica
 Intended status: Informational                               J. Bouquier
-Expires: 5 September 2025                                       Vodafone
+Expires: 31 October 2025                                        Vodafone
                                                                J. Meuric
                                                                   Orange
                                                                G. Mishra
                                                                  Verizon
                                                            G. Galimberti
                                                               Individual
-                                                            4 March 2025
+                                                           29 April 2025
 
 
     Use cases, Network Scenarios and gap analysis for Packet Optical
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 September 2025.
+   This Internet-Draft will expire on 31 October 2025.
 
 Copyright Notice
 
@@ -433,7 +433,10 @@ Table of Contents
    optical service over a short distance (e.g., up to 100 km) using a
    physical optical network with DWDM filters and amplifiers.  Several
    point-to-point connections can be multiplexed from the same packet
-   devices.
+   devices.  A variant of this use case is mobile fronthaul, analyzed in
+   [MOPA-Tech-Paper], where coherent pluggables in packet aggregation
+   switches would use WDM but no amplification for distances up to 20 km
+   or so.
 
    Note that there is no protection in this scenario.  [TODO: optical
    switch for protection??]
@@ -856,13 +859,18 @@ Table of Contents
               TIP_OOPT_MANTRA_IP_over_DWDM_Whitepaper-Final-
               Version3.pdf>.
 
+   [MOPA-Tech-Paper]
+              "MOPA Technical Paper v3.2", 1 April 2025, <https://mopa-
+              alliance.org/wp-content/uploads/2025/03/
+              MOPA_Technical_Paper-v3.2-Final.pdf>.
+
    [I-D.draft-ietf-ccamp-optical-impairment-topology-yang]
               Beller, D., Le Rouzic, E., Belotti, S., Galimberti, G.,
               and I. Busi, "A YANG Data Model for Optical Impairment-
               aware Topology", Work in Progress, Internet-Draft, draft-
-              ietf-ccamp-optical-impairment-topology-yang-17, 21 October
-              2024, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              ccamp-optical-impairment-topology-yang-17>.
+              ietf-ccamp-optical-impairment-topology-yang-18, 11 April
+              2025, <https://datatracker.ietf.org/doc/html/draft-ietf-
+              ccamp-optical-impairment-topology-yang-18>.
 
    [I-D.draft-ietf-teas-actn-poi-applicability]
               Peruzzini, F., Bouquier, J., Busi, I., King, D., and D.
