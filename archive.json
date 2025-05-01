@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-04-13T02:14:13.524079+00:00",
+  "timestamp": "2025-05-01T00:56:09.883127+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -625,16 +625,24 @@
       "id": "I_kwDOLDCSO86n2pY9",
       "title": "Add MOPA scenario and use case",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/issues/30",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "oscargdd",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Suggestion by Stefan Dahlfor to add MOPA scenario and use case. One possibility would be to add a sentence or two in section 4.2 mentioning the main variants used in mobile fronthaul (ie coherent pluggables in mobile fronthaul packet aggregation switches using WDM but no amplification for distances up to 20 km or so), If suitable, the MOPA paper v.3.1 chapter 8 could be added as a reference providing more information.\n \n",
       "createdAt": "2025-01-28T16:07:48Z",
-      "updatedAt": "2025-01-28T16:07:48Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-04-29T15:07:18Z",
+      "closedAt": "2025-04-29T15:07:16Z",
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Solved with pr #50 ",
+          "createdAt": "2025-04-29T15:07:16Z",
+          "updatedAt": "2025-04-29T15:07:16Z"
+        }
+      ]
     },
     {
       "number": 31,
@@ -675,11 +683,13 @@
       "state": "OPEN",
       "author": "ggrammel",
       "authorAssociation": "CONTRIBUTOR",
-      "assignees": [],
+      "assignees": [
+        "jbouqui153"
+      ],
       "labels": [],
       "body": "line 189: TODO: where is \"disaggregation\" defined?",
       "createdAt": "2025-01-28T17:42:07Z",
-      "updatedAt": "2025-03-04T16:16:38Z",
+      "updatedAt": "2025-04-29T15:52:27Z",
       "closedAt": null,
       "comments": [
         {
@@ -702,6 +712,20 @@
           "body": "TIP Open Optical Whitepaper describes the different disaggregation levels. Add reference to https://cdn.mediavalet.com/usva/telecominfraproject/VdNAxFBh8UKdTtvU_OOU2A/ooMkKLHdL0i-qq-fgsIxvQ/Original/TIP_OOPT_MUST_Optical_Whitepaper_Target_Architecture_-_Disaggregated_Open_Optical_Networks__v10_-_GREENPUBLIC_ACCESS.pdf ",
           "createdAt": "2025-03-04T16:16:37Z",
           "updatedAt": "2025-03-04T16:16:37Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "also consider G.698.2",
+          "createdAt": "2025-04-29T15:51:34Z",
+          "updatedAt": "2025-04-29T15:51:34Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "IETF document optical impairments topology draft can be also a good choice",
+          "createdAt": "2025-04-29T15:52:17Z",
+          "updatedAt": "2025-04-29T15:52:17Z"
         }
       ]
     },
@@ -713,13 +737,23 @@
       "state": "OPEN",
       "author": "ggrammel",
       "authorAssociation": "CONTRIBUTOR",
-      "assignees": [],
+      "assignees": [
+        "ju7ien"
+      ],
       "labels": [],
       "body": "line 333: is the scenario with an optical protection switch supposed to be added? ",
       "createdAt": "2025-01-28T17:43:39Z",
-      "updatedAt": "2025-01-28T17:43:39Z",
+      "updatedAt": "2025-04-29T15:58:06Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Agreement between operators to keep out the protection. ",
+          "createdAt": "2025-04-29T15:57:34Z",
+          "updatedAt": "2025-04-29T15:57:34Z"
+        }
+      ]
     },
     {
       "number": 34,
@@ -1763,26 +1797,42 @@
       "id": "PR_kwDOLDCSO86ST9Ie",
       "title": "Update draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.md",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/50",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "GregMirsky",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "MOPA contribution",
       "createdAt": "2025-04-11T20:15:23Z",
-      "updatedAt": "2025-04-11T20:15:23Z",
+      "updatedAt": "2025-04-29T15:05:53Z",
       "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
       "baseRefName": "main",
       "baseRefOid": "05388b67182e06b767402c278620831875a388f7",
       "headRepository": "GregMirsky/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
       "headRefName": "patch-1",
       "headRefOid": "6a856dcadf8c6e28362d0a67be7d2a471b1d395a",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-04-29T15:05:53Z",
+      "mergedAt": "2025-04-29T15:05:53Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "47c4335696429b08cdc91ee56b4d1993897ea2a5"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86nIlSm",
+          "commit": {
+            "abbreviatedOid": "6a856dc"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "looks good for a starting point, can be enhanced later.",
+          "createdAt": "2025-04-29T15:05:47Z",
+          "updatedAt": "2025-04-29T15:05:47Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
