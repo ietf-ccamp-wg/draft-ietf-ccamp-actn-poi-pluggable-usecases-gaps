@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-01T00:56:09.883127+00:00",
+  "timestamp": "2025-05-08T00:51:59.946704+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -743,7 +743,7 @@
       "labels": [],
       "body": "line 333: is the scenario with an optical protection switch supposed to be added? ",
       "createdAt": "2025-01-28T17:43:39Z",
-      "updatedAt": "2025-04-29T15:58:06Z",
+      "updatedAt": "2025-05-06T14:48:10Z",
       "closedAt": null,
       "comments": [
         {
@@ -752,6 +752,13 @@
           "body": "Agreement between operators to keep out the protection. ",
           "createdAt": "2025-04-29T15:57:34Z",
           "updatedAt": "2025-04-29T15:57:34Z"
+        },
+        {
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "body": "This I-D is scoped to focus on the most common deployment scenario: routers are interconnected using unprotected optical services and recovery is handled at the IP/MPLS/SR layer. Scenarios involving protection/restoration in the optical network are purposely left for future work (e.g., through model augmentations).",
+          "createdAt": "2025-05-06T14:47:24Z",
+          "updatedAt": "2025-05-06T14:48:09Z"
         }
       ]
     },
