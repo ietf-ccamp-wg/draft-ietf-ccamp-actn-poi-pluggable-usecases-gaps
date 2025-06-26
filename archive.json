@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-08T00:51:59.946704+00:00",
+  "timestamp": "2025-06-26T00:53:48.309312+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -65,7 +65,7 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-01-23T16:37:26Z",
-      "updatedAt": "2025-03-04T16:24:59Z",
+      "updatedAt": "2025-06-24T15:22:29Z",
       "closedAt": null,
       "comments": [
         {
@@ -88,6 +88,13 @@
           "body": "Call 4/3/204: Suggestion to mention in the beginning of the scenarios section that the IP link is supported over an Ethernet connection, not shown in the pictures for simplification. ",
           "createdAt": "2025-03-04T16:24:55Z",
           "updatedAt": "2025-03-04T16:24:55Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "See https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/51 as proposal to solve the point",
+          "createdAt": "2025-06-24T15:22:29Z",
+          "updatedAt": "2025-06-24T15:22:29Z"
         }
       ]
     },
@@ -178,15 +185,15 @@
       "id": "I_kwDOLDCSO86BQWt8",
       "title": "Check all contributors for next version",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/issues/7",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "oscargdd",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "We have submitted last-minute in this version, so some contributors like Manolo and Jose Angel were not included. I'd like to track here the contributors to add.",
       "createdAt": "2024-03-05T07:58:24Z",
-      "updatedAt": "2025-03-04T16:32:27Z",
-      "closedAt": null,
+      "updatedAt": "2025-06-24T15:28:38Z",
+      "closedAt": "2025-06-24T15:28:38Z",
       "comments": [
         {
           "author": "oscargdd",
@@ -201,6 +208,13 @@
           "body": "> Call 4/3/2025 Asked for missing contributors, please create pull request or reply in this issue. Closing in one week.\n\n@oscargdd : Hi Oscar, could you add me in the list of contributors ? Thanks",
           "createdAt": "2025-03-04T16:32:26Z",
           "updatedAt": "2025-03-04T16:32:26Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Fixed in 00698369b12af0ed64f10957678a3fd84f2fbd21 ",
+          "createdAt": "2025-06-24T15:28:38Z",
+          "updatedAt": "2025-06-24T15:28:38Z"
         }
       ]
     },
@@ -1840,6 +1854,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 51,
+      "id": "PR_kwDOLDCSO86b496d",
+      "title": "Update draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/pull/51",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-06-24T15:22:10Z",
+      "updatedAt": "2025-06-24T15:22:10Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "47c4335696429b08cdc91ee56b4d1993897ea2a5",
+      "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "issue-1",
+      "headRefOid": "cd1ca89cb46c04d22b26e1aaf014466ecd0c93e4",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
