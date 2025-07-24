@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-10T00:54:53.320466+00:00",
+  "timestamp": "2025-07-24T00:57:05.168283+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -341,7 +341,7 @@
       "labels": [],
       "body": "The requirement is to be able to know which type of pluggable  is availble, so it't characterization can be obtained by the controller. This does not preclude that the controller also discovers capabilities real time from the pluggable and verifies them vs the expectations from the pre-characterization. \r\n\r\nIt is required to standardize which parameters to use in this identification (from ivy and/ openconfig).\r\n ",
       "createdAt": "2024-04-30T15:59:54Z",
-      "updatedAt": "2025-03-04T16:47:31Z",
+      "updatedAt": "2025-07-22T13:56:46Z",
       "closedAt": null,
       "comments": [
         {
@@ -364,6 +364,13 @@
           "body": "Suggestion from 4/3/2025 call: Describe a specifc planning use case were the two options are documented (get the inventory information and get infomration from external database, and get the inventory + manifest, so the controller/planning tool is self-sufficient. \n\nBorrow from TIP whitepaer. ",
           "createdAt": "2025-03-04T16:47:23Z",
           "updatedAt": "2025-03-04T16:47:23Z"
+        },
+        {
+          "author": "nigel-r-davis",
+          "authorAssociation": "NONE",
+          "body": "During the IETF 123 ccamp meeting in the presented slides (https://datatracker.ietf.org/meeting/123/materials/slides-123-ccamp-03-poi-pluggable-use-cases-00) there were two approaches mentioned:\n\u2022 The controller/planning tool retrieves all relevant data from external sources based on inventory information **(e.g., part number).**\n\u2022 The controller/planning tool accesses a \u201cmanifest\u201d containing all necessary details, allowing it to operate independently.\n\nThere was some debate about part number v operational mode. The operational mode clearly defines the key parameters related to viabiity/compatibility. However, a pluggable etc. may support several operational modes and will have other capability considerations that need to be understood in addition to operational modes.\n\nI suggest that the overall capability of any equipment, including the plugabble, is identified considering the part number (and version) along with supportable software (and hence is emergent from the composite effect of the hardware and software). This should essentially reference a statement of capabiity which will, for a pluggable, identify the operational modes supported (as part of the statement). Each operational mode leads to a definition of photonic capabilities (that should be explicitly stated in machine interpretable form - the manifest).\n\nAt some point in the network planning cycle, prior to installation of hardware, it is necessary to understand the capabilities of each specific \"hardware & software combination\" (plug etc,). At that point, for a pluggable, the operational mode capabilities can be evaluated.\n\nHence I support the use of the equipment and software type/version to acquire information on capability (including operational mode) .\n\nThere are several seperate initiatives leading to a common requirements for statement of capability. It is likely that we need a separate activity to consolidate this. Several of us are trying to initiate an activity to cover this.\n",
+          "createdAt": "2025-07-22T13:56:46Z",
+          "updatedAt": "2025-07-22T13:56:46Z"
         }
       ]
     },
