@@ -5,14 +5,14 @@
 ccamp                                                      O. G. de Dios
 Internet-Draft                                                Telefonica
 Intended status: Informational                               J. Bouquier
-Expires: 31 October 2025                                        Vodafone
+Expires: 20 September 2026                                      Vodafone
                                                                J. Meuric
                                                                   Orange
                                                                G. Mishra
                                                                  Verizon
                                                            G. Galimberti
                                                               Individual
-                                                           29 April 2025
+                                                           19 March 2026
 
 
     Use cases, Network Scenarios and gap analysis for Packet Optical
@@ -58,11 +58,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 31 October 2025.
+   This Internet-Draft will expire on 20 September 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -868,18 +868,18 @@ Table of Contents
               Beller, D., Le Rouzic, E., Belotti, S., Galimberti, G.,
               and I. Busi, "A YANG Data Model for Optical Impairment-
               aware Topology", Work in Progress, Internet-Draft, draft-
-              ietf-ccamp-optical-impairment-topology-yang-18, 11 April
-              2025, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              ccamp-optical-impairment-topology-yang-18>.
+              ietf-ccamp-optical-impairment-topology-yang-23, 27
+              February 2026, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-ccamp-optical-impairment-topology-yang-23>.
 
    [I-D.draft-ietf-teas-actn-poi-applicability]
               Peruzzini, F., Bouquier, J., Busi, I., King, D., and D.
               Ceccarelli, "Applicability of Abstraction and Control of
               Traffic Engineered Networks (ACTN) to Packet Optical
               Integration (POI)", Work in Progress, Internet-Draft,
-              draft-ietf-teas-actn-poi-applicability-14, 25 February
-              2025, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              teas-actn-poi-applicability-14>.
+              draft-ietf-teas-actn-poi-applicability-18, 14 March 2026,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-teas-
+              actn-poi-applicability-18>.
 
 Appendix A.  Acknowledgments
 
@@ -951,6 +951,11 @@ Contributors
    Gert Grammel
    Juniper Networks
    Email: ggrammel@juniper.net
+
+
+   Sergio Belotti
+   Nokia
+   Email: sergio.belotti@nokia.com
 
 
 Authors' Addresses
