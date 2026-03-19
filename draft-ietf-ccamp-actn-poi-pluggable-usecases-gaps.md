@@ -118,7 +118,7 @@ contributor:
     name: Gert Grammel
     org: Juniper Networks
     email: ggrammel@juniper.net
-   -
+  -
     name: Sergio Belotti
     org: Nokia
     email: sergio.belotti@nokia.com
@@ -198,7 +198,7 @@ The traditional architecture involves separation of the packet network from an o
 (TODO: where is "disaggregation" defined?)
 Disaggregation enables network operators to choose best-of-breed components for each layer, fostering innovation and competition in the networking industry. However, implementing and managing a disaggregated network also comes with challenges related to interoperability, integration, and maintaining end-to-end performance across the various networks.
 
-~~~
+~~~~
       |----------|                                   |----------|
       |  Packet  |           IP Link                 |  Packet  |
       |  Device  |===================================|  Device  |
@@ -222,7 +222,7 @@ Disaggregation enables network operators to choose best-of-breed components for 
     xPonder:   Muxponder or transponder
     Photonics: ROADM + Amp + Regen
     ....       Optical Line System
-~~~
+~~~~
 {: #figure-traditional title="Packet over Optics Traditional Architecture Deployment Model"}
 
 ## Deployment Model with Coherent Pluggables
@@ -235,7 +235,7 @@ One of the key advantages of using coherent plugs in routers is the potential to
 
 As noted above, for some use-cases when the distance between packet devices is short and optical power of pluggables are enough, the photonics devices might not be needed as shown in {{figure-with-plug}}(B).
 
-~~~
+~~~~
       |-----------|                               |-----------|
       |  Packet   |           IP Link             |   Packet  |
       |  Device  +++++ ======================= +++++  Device  |
@@ -266,12 +266,12 @@ As noted above, for some use-cases when the distance between packet devices is s
     xPonder:   Muxponder or transponder
     Photonics: ROADM + Amp + Regen
     Optical Network: Photonics + pluggables
-~~~
+~~~~
 {: #figure-with-plug title="Packet over Optics Deployment Model with Coherent Plugs"}
 
 In many cases, the operators' packet over optical networks will most likely be a combination of networks shown in {{figure-traditional}} and {{figure-with-plug}} where the optical network contains both coherent pluggables and xPonders as shown in {{figure-with-plug-and-xponder}}.
 
-~~~
+~~~~
       |-----------|                                   |-----------|
       |  Packet   |              IP Link              |   Packet  |
       |  Device  +++++ =========================== +++++  Device  |
@@ -300,7 +300,7 @@ In many cases, the operators' packet over optical networks will most likely be a
     ++++       Coherent pluggables
     xPonder:   Muxponder or transponder
     Photonics: ROADM + Amp + Regen
-~~~
+~~~~
 {: #figure-with-plug-and-xponder title="Packet over Optics Deployment Model with Coherent Plugs and xPonders"}
 
 
@@ -314,7 +314,7 @@ As depicted in {{figure-topo1}}, this scenario considers a point-to-point optica
 
 Note that there is no amplification and no protection in this scenario.
 
-~~~
+~~~~
     Packet                                                             Packet
     Device A                                                           Device B
     +----+             IP Link (between Router Ports)                  +----+
@@ -329,7 +329,7 @@ Note that there is no amplification and no protection in this scenario.
     |  |------|                                                   |------|  |
     |    |                                                             |    |
     +----+                                                             +----+
-~~~
+~~~~
 {: #figure-topo1 title="Network topology with dedicated direct fiber"}
 
 ## Scenario B - High capacity point to point over shared fiber
@@ -339,9 +339,9 @@ This scenario extends {{figure-topo1}} by making more efficient use of the deplo
 As shown in {{figure-topo2}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices. A variant of this use case is mobile fronthaul, analyzed in {{MOPA-Tech-Paper}}, where coherent pluggables in packet aggregation switches would use WDM but no amplification for distances up to 20 km or so.
 
 Note that there is no protection in this scenario.
-[TODO: optical switch for protection??]
+\[TODO: optical switch for protection??]
 
-~~~
+~~~~
     Packet                                                             Packet
     Device A                                                           Device B
     +----+             IP Link (between Router Ports)                  +----+
@@ -362,7 +362,7 @@ Note that there is no protection in this scenario.
        |Plug C|                                                   |Plug D|
        |      |                                                   |      |
        |------|                                                   |------|
-~~~
+~~~~
 {: #figure-topo2 title="Network topology with shared direct fiber network"}
 
 ## Scenario C - High capacity point to point over metro-regional shared meshed network
@@ -373,7 +373,7 @@ As shown in {{figure-topo3}}, this scenario considers a point-to-point optical s
 
 Note that there is no resilience in this scenario. (TODO: CHECK AS RESTORATION COULD BE A CHOICE)
 
-~~~
+~~~~
     Packet                                                             Packet
     Device A                                                           Device B
     +----+              IP Link (between Router Ports)                 +----+
@@ -388,7 +388,7 @@ Note that there is no resilience in this scenario. (TODO: CHECK AS RESTORATION C
     |  |------|      |-------|      |-------|      |-------|      |------|  |
     |    |                                                             |    |
     +----+                                                             +----+
-~~~
+~~~~
 {: #figure-topo3 title="Network topology with shared switched fiber network"}
 
 
@@ -397,7 +397,7 @@ Note that there is no resilience in this scenario. (TODO: CHECK AS RESTORATION C
 
 This scenario, shown in {{figure-topo5}} and extends network topologies {{figure-topo1}} to {{figure-topo3}} and covers a case, where one end of an optical service is terminated on a plug and the other end is terminated on a traditional xPonder (transponder or muxponder) with grey optics to a packet device. This scenario is encountered when one of the packet device does not support coherent plugables or as part of an optical regenerator device.
 
-~~~
+~~~~
     Packet                                                             Packet
     Device A                                                           Device B
     +----+             IP Link (between Router Ports)                  +----+
@@ -413,7 +413,7 @@ This scenario, shown in {{figure-topo5}} and extends network topologies {{figure
     |    |                                                             |    |
     +----+                                                             +----+
 
-~~~
+~~~~
 {: #figure-topo5 title="Network topology with symmetric plug and transponder"}
 
 ## Other Network scenarios.
@@ -433,22 +433,22 @@ The use cases a generally applicable for both the traditional packet over optica
 
 ### End-to-end multi-layer network and service topology discovery and inventory
 The objective of the use case is to have a full end-to-end multi-layer view from all the layers and their inter-dependencies: service layer (e.g. L3VPN/L2VPN), transport layer (RSVP-TE, SR-TE), IP layer (IGP), Ethernet layer, OTN L1 layer (optional), photonic L0 layer (OCh, OMS, OTS and fibre). The discovery process, in addition to the layered logical view, includes the inventory discovery by each controller and exposure to the MDSC of the required information for a complete end-to-end multi-layer view of the network.
-[TODO: re-phrase in architecture independen manner]
+\[TODO: re-phrase in architecture independen manner]
 
 #### Coherent DWDM pluggable insertion in the router linecard port ('valid for coherent pluggable')
 Once a pluggable module is inserted in the proper linecard port, the host device must recognise the hardware component (e.g. 400G ZR+ pluggable module) and expose its attributes and capabilities to its controller. For example, ZR+ modules can share the operational-mode-IDs supported that summarize the most important pluggable characteristics (such as FEC type, modulation format, baud rate, bit rate, etc.). If the hardware component has been successfully recognised, the host device is then ready to create and expose the necessary logical arrangements.
-[TODO: Last sentence is unclear. suggest to remove]
+\[TODO: Last sentence is unclear. suggest to remove]
 
 Some coherent pluggables seem to come with a factory default set of provisioning parameters (e.g. default channel number, default launched power, default application code id, laser-on, admin-state enabled etc.). This factory default set of provisioning parameters varies from manufacturer to manufacturer. This can allow a “plug&play” mode of operation over point-to-point connections (e.g. single wavelength over dark fiber). However, when the optical connection between two pluggables is targeted to run over a DWDM Open Line System (OLS) network, optical validation & planning step is first required to determine the right target provisioning parameters values to be set in the pluggables before interconnecting them to their respective ROADM to avoid to impact any other existing optical channels already up and running in the OLS network.
 It is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of factory default provisioning parameters may be fine but they shall always be able to be overwritten through router CLI or through Packet PNC to another set of  default provisioning parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC or due to a power off/on) shall always go back to this operator’s default set of provisioning parameters where, for example, the laser-state shall be ‘Off’ and admin-state ‘disabled’.
 
 #### Inventory of Coherent DWDM pluggable ('valid for coherent pluggable').
-The domain controller exposes to the MDSC hardware inventory information of the devices under its supervision. [TODO: re-phrase in architecture independent manner] For full router inventory (linecards, ports, etc.) see draft-ietf-ivy-network-inventory-yang. In addition, capability information shall include the coherent pluggable transceiver capabilities. These include, for instance, operational-modes supported (ITU-T application codes, organizational modes), min/max central-frequency range supported, min/max output power supported, min/max received power supported etc. In case of discovery of any HW mismatch between coherent pluggable and router linecard port capabilities the controller shall report HW mismatch alarm to MDSC. An example is a linecard multi-rate port vs coherent pluggable with only one client/line rate (e.g. 1x400GE).
+The domain controller exposes to the MDSC hardware inventory information of the devices under its supervision. \[TODO: re-phrase in architecture independent manner] For full router inventory (linecards, ports, etc.) see draft-ietf-ivy-network-inventory-yang. In addition, capability information shall include the coherent pluggable transceiver capabilities. These include, for instance, operational-modes supported (ITU-T application codes, organizational modes), min/max central-frequency range supported, min/max output power supported, min/max received power supported etc. In case of discovery of any HW mismatch between coherent pluggable and router linecard port capabilities the controller shall report HW mismatch alarm to MDSC. An example is a linecard multi-rate port vs coherent pluggable with only one client/line rate (e.g. 1x400GE).
 
 #### Coherent pluggable OTSi service discovery information ('valid for coherent pluggable').
 
 Once a router-to-router connection with coherent pluggables has been created over a Network Media Channel in the optical Line system, then it is required by the O-PNC to expose the OTSi service. The relevant OTSi information could be nominal-central-frequency, tx-output-power, operational-mode-ID, operational-status, admin-status etc.
-[TODO: consider rewriting in architecture neutral form and without sequence. It is unclear what is required here]
+\[TODO: consider rewriting in architecture neutral form and without sequence. It is unclear what is required here]
 
 #### Discovery of layer relationships
 
@@ -456,7 +456,7 @@ The physical connectivity needs to be exposed. This includes the port, patch fib
 
 
 ### End-to-end multi-layer event/fault management (valid for both)
-The Target in this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). [TODO: the example seems to be an OLS-only feature] This use case is divided in two:
+The Target in this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). \[TODO: the example seems to be an OLS-only feature] This use case is divided in two:
 * Correlation of ZR+ connection (OTSi service) operational-status with MC/NMC operational-status (‘valid for coherent pluggable)
 In this case, the target is to expose to the MDSC both the events/faults from the ZR+ connection (OTSi service) and ZR+ pluggables as well as for the MC/NMC associated to this ZR+ connection (OTSi service) in the DWDM Line system so that proper correlation can be performed
 * Correlation of coherent pluggable operational status, port status, OLS (ROADM, AMP) status, Ethernet link operational status, IP link status
@@ -478,7 +478,7 @@ TBC
 
 ## Inter-domain link validation (valid for coherent pluggable)
 Documenting the patch cord that connects the port of the coherent DWDM pluggable in the routers to the optical node (e.g. to the right Add/Drop port of the ROADM) is performed. This manual operation is prone to human mistakes. It would be highly beneficial for operators to have a mean to check/discover that the right pluggable has been connected to the desired ROADM port. This use case requires the ability to inject optical power and expose power levels at coherent DWDM pluggable side and at ROADM port side and vice versa to perform the right correlation and validation.
-[TODO: is there IETF work we can point to? ROADMs usually cannot send signals by themselves that can be retrieved by an attached transponder]
+\[TODO: is there IETF work we can point to? ROADMs usually cannot send signals by themselves that can be retrieved by an attached transponder]
 
 ## End-to-end L3VPN/L2VPN service multi-layer fulfilment with SLA constraints (TE constraints) (valid for both)
 This use case is described in {{?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation shall be achieved. The automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
@@ -494,19 +494,19 @@ Same optical planning and validation is performed first by optical team and then
 
 ### Semi-Automated Day 1 configuration with Path Computation API request (‘valid for coherent pluggable’)
 In this use case the start of the pluggable to pluggable connectivity is triggered by the connectivity needs of a packet service (slice, vpn, etc...). In the context of ACTC, the process would start with MDSC receiving the service request (e.g. L3VPN) (or service provisioning from a GUI) and the MDSC determines that new optical connectivity is needed between two ZR/ZR+ pluggables which are already physically connected (patch cord) to ROADM nodes ports. MDSC sends a path computation request to the O-PNC asking for a specific MC/NMC between source Mux/Dmux and destination Mux/Dmux for a target bitrate (e.g. 400G) and O-PNC in coordination with planning tool calculates the optical path (after successful PCE computation) for this given bitrate (e.g. 400G) with a specific operational-mode-ID supported by these coherent pluggables. It validates the optical path defining the central-frequency, output-power, operational-mode-ID to be configured in the coherent pluggables. O-PNC updates the MDSC of successful optical path creation exposing this new optical path to the MDSC along with the nominal-central-frequency, the target-output-power, the operational-mode-ID for which this MC/NMC was created, etc. The MDSC requests the relevant PNC to configure both source and target pluggables with the calculated parameters.
-[TODO: Rewrite in architecture neutral manner]
+\[TODO: Rewrite in architecture neutral manner]
 
 MDSC uses the coherent pluggable CRUD data model to be used on MPI to configure the corresponding ZR+ connection (OTSi service) in the source and destination coherent pluggables.
 This operation is supported by the PNC which will be in charge also to turn-on the laser and complete the optical path set-up. At this point the optical path will be moved to operational state and the Packet traffic starts to flow.
 
-[TODO: this section is a description for a procedure. Can it instead be translated in a use-case?)]
+\[TODO: this section is a description for a procedure. Can it instead be translated in a use-case?)]
 
 ### Fully automated Day 1 configuration
 (For future discussions)
 
 ## 4. End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
 This use case is described in {{?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation could be achieved. However considering PMO (Present Mode of Operation) in most operators, before an optical path is setup either between two native transponders or between two coherent pluggables in  routers, a detailed optical planning and validation is typically required. So, the automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
-[TODO: explain how the need for additional optical connectivity is triggered. VPN often does not carry a bandwidth information, so it is hard to figure out when it is "full". Even then the remediation action may be a reroute.]
+\[TODO: explain how the need for additional optical connectivity is triggered. VPN often does not carry a bandwidth information, so it is hard to figure out when it is "full". Even then the remediation action may be a reroute.]
 
 ## End-to-end L3VPN/L2VPN service multi-layer with SLA constraints (TE constraints) with optical restoration support (valid for both but here focusing on the coherent pluggable)
 This use case has not the same priority as the previous ones as protection in multi-layer Core/Backhaul networks is usually implemented at IP layer (e.g. FRR with RSVP-TE, TI-LFA with SR and SR policies in SR-TE) to avoid proven protection races.
@@ -514,7 +514,7 @@ a. ZR+ links over DWDM network can be considered out of the L0 control plane so 
 b. ZR+ links over DWDM network can be considered part of the L0 control plane but no restoration is enabled for those links
 c. ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links but nominal-central-frequeny is maintained unchanged after L0 restoration. Only output-power could be tuned for the new restored path determined by the L0 control plane
 d. ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links and nominal-central-frequency and output power need to be tuned for the new restored path determined by the L0 control plane.
-[TODO: Unclear description]
+\[TODO: Unclear description]
 
 # Security Considerations
 
