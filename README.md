@@ -1,21 +1,22 @@
-# Use cases, Network Scenarios and gap analys for Packet Optical Integration (POI) with coherent plugables under ACTN Framework
+<!-- regenerate: on (set to off if you edit this file) -->
 
-This is the working area for the individual Internet-Draft, "Use cases, Network Scenarios and gap analys for Packet Optical Integration (POI) with coherent plugables under ACTN Framework".
+# Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable pluggables under ACTN Framework
 
-* [Editor's Copy](https://oscargdd.github.io/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/#go.draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps)
-* [Compare Editor's Copy to Individual Draft](https://oscargdd.github.io/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/#go.draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.diff)
+This is the working area for the IETF [CCAMP Working Group](https://datatracker.ietf.org/group/ccamp/documents/) Internet-Draft, "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable pluggables under ACTN Framework".
+
+* [Editor's Copy](https://ietf-ccamp-wg.github.io/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/#go.draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps)
+* [Compare Editor's Copy to Working Group Draft](https://ietf-ccamp-wg.github.io/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/#go.draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps/blob/main/CONTRIBUTING.md).
 
-Contributions can be made by creating pull requests.
-The GitHub interface supports creating pull requests using the Edit (✏) button.
-
+The contributing file also has tips on how to make contributions, if you
+don't already know how to do that.
 
 ## Command Line Usage
 
